@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 const Hero = () => {
   return (
     <>
-      <div className="bg-gray-200 text-black container px-2 pt-20 pb-6 flex justify-center">
+      <div className="bg-gray-200 text-black mx-auto px-4 pt-24 pb-6 flex justify-center">
         <Typewriter
           options={{
             strings: [

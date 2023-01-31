@@ -6,7 +6,7 @@ const MenuBar = ({ logoSrc, logoAlt, compTitle, menuList }) => {
 
   return (
     <>
-      <div className="fixed z-50 w-full container p-2 bg-black text-white">
+      <div className="fixed top-0 left-0 right-0 z-50 mx-auto p-4 bg-black text-white">
         <div className="flex items-center justify-center">
           <div className="flex justify-center items-center mr-auto">
             <img
@@ -14,7 +14,7 @@ const MenuBar = ({ logoSrc, logoAlt, compTitle, menuList }) => {
               className="w-10 h-10 animate__animated animate__fadeInRight"
               alt={logoAlt}
             />
-            <p className="text-lg font-bold w-60 ml-2 leading-none animate__animated animate__fadeInRight">
+            <p className="text-lg font-bold w-60 ml-4 leading-none animate__animated animate__fadeInRight">
               {compTitle}
             </p>
           </div>
@@ -40,7 +40,7 @@ const MenuBar = ({ logoSrc, logoAlt, compTitle, menuList }) => {
         >
           <Dialog
             as="div"
-            className="absolute w-full top-0 pt-16 pb-4 px-2 z-10 bg-black text-white"
+            className="absolute w-full mx-auto top-0 left-0 right-0 pt-20 p-4 z-10 bg-black text-white"
             open={isOpen}
             onClose={() => setIsOpen(false)}
           >
