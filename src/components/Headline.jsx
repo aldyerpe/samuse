@@ -9,7 +9,11 @@ const Headline = ({ headTitle, headContent }) => {
         </h1>
         <div className="text-lg mt-4 space-y-4">
           {headContent.map((detail) => {
-            return <p className="text-justify">{detail.content}</p>;
+            return (
+              <p className="text-justify animate__animated animate__fadeInDown">
+                {detail.content}
+              </p>
+            );
           })}
         </div>
       </div>
